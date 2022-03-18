@@ -29,6 +29,7 @@ const VideoPlayer = () => {
 
   return (
     <Grid container className={classes.gridContainer}>
+      {/* our our video */}
       {stream && (
         <Paper className={classes.paper}>
           <Grid item xs={12} md={6}>
@@ -37,6 +38,7 @@ const VideoPlayer = () => {
           </Grid>
         </Paper>
       )}
+      {/* user video frame */}
       {callAccepted && !callEnded && (
         <Paper className={classes.paper}>
           <Grid item xs={12} md={6}>
