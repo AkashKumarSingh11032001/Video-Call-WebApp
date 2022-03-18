@@ -1,5 +1,5 @@
 {
-  "name": "Video-Call-WebApp",
+  "name": "video_call_webapp",
   "version": "1.0.0",
   "description": "Group video calling webapp using Agora,React.Js,HTML,CSS,JavaScript.",
   "main": "index.js",
