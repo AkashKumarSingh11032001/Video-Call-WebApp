@@ -16,5 +16,11 @@
   "bugs": {
     "url": "https://github.com/AkashKumarSingh11032001/Video-Call-WebApp/issues"
   },
-  "homepage": "https://github.com/AkashKumarSingh11032001/Video-Call-WebApp#readme"
+  "homepage": "https://github.com/AkashKumarSingh11032001/Video-Call-WebApp#readme",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.17.3",
+    "nodemon": "^2.0.15",
+    "socket.io": "^4.4.1"
+  }
 }
