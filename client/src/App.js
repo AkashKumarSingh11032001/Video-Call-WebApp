@@ -1,7 +1,9 @@
 import React from 'react';
+// material UI
 import { Typography, AppBar } from '@material-ui/core';
 import { makeStyles } from '@material-ui/core/styles';
 
+// my defiend component
 import VideoPlayer from './components/VideoPlayer';
 import Sidebar from './components/Sidebar';
 import Notifications from './components/Notifications';
@@ -37,10 +39,13 @@ const App = () => {
 
   return (
     <div className={classes.wrapper}>
+      {/* App bar */}
       <AppBar className={classes.appBar} position="static" color="inherit">
         <Typography variant="h2" align="center">Video Chat</Typography>
       </AppBar>
-      <VideoPlayer />
+      {/* video component */}
+      <VideoPlayer /> 
+      {/* Slidebar as parents of Notification*/}
       <Sidebar>
         <Notifications />
       </Sidebar>
