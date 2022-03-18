@@ -4,10 +4,7 @@
   "description": "Group video calling webapp using Agora,React.Js,HTML,CSS,JavaScript.",
   "main": "index.js",
   "scripts": {
-    "start": "react-scripts start",
-		"build": "react-scripts build",
-		"test": "react-scripts test",
-		"eject": "react-scripts eject"
+    "start": "node index.js"
   },
   "repository": {
     "type": "git",
