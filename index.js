@@ -19,17 +19,17 @@ app.get('/', (req, res) => {
 
 // standard Socket Code
 io.on("connection", (socket) => {
-	socket.emit("me", socket.id);
+	socket.emit("me", socket.id); //initiate the host id
 
-	socket.on("disconnect", () => {
+	socket.on("disconnect", () => { //send the host id to server
 		socket.broadcast.emit("callEnded")
 	});
 
-	socket.on("callUser", ({ userToCall, signalData, from, name }) => {
+	socket.on("callUser", ({ userToCall, signalData, from, name }) => { //receiver recived the host id.
 		io.to(userToCall).emit("callUser", { signal: signalData, from, name });
 	});
 
-	socket.on("answerCall", (data) => {
+	socket.on("answerCall", (data) => { //reciver recied the call and send acknowledge
 		io.to(data.to).emit("callAccepted", data.signal)
 	});
 });
