@@ -44,7 +44,7 @@ const App = () => {
         <Typography variant="h2" align="center">Video Chat</Typography>
       </AppBar>
       {/* video component */}
-      <VideoPlayer /> 
+      <VideoPlayer />
       {/* Slidebar as parents of Notification*/}
       <Sidebar>
         <Notifications />
